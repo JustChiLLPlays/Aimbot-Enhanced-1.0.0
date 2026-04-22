@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "aimoptimizer_enhanced",
+	"version": "${version}",
+	"name": "AimOptimizer_Enhanced",
+	"description": "Enhanced AimOptimizer with Next-Level of Perfection, Which helps You To Aim Better!",
+	"authors": [
+		"RaunakAkaJustChiLL"
+			],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aimoptimizer_enhanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.raunakyadav_justchillplays.aimoptimizer_enhanced.AimOptimizer_Enhanced"
+		],
+		"client": [
+			"com.raunakyadav_justchillplays.aimoptimizer_enhanced.client.AimOptimizer_EnhancedClient"
+		]
+	},
+	"mixins": [
+		"aimoptimizer_enhanced.mixins.json",
+		{
+			"config": "aimoptimizer_enhanced.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

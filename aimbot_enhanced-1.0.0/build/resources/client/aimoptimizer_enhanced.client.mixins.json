@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.raunakyadav_justchillplays.aimoptimizer_enhanced.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GameMenuScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
